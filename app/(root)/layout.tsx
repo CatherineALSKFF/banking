@@ -5,9 +5,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <main>
+     
       sidebar 
-      {children}</main>
+      {children}
+     
     </html>
   );
 }
