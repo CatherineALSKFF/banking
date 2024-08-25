@@ -5,7 +5,9 @@ import TotalBalanceBox from "@/components/ui/TotalBalanceBox";
 export default function Home() {
   const loggedIn= { firstName: 'Catherina'}
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <section className="home">
+      <div className="home-content">
+        <header className="home-header">
       <HeaderBox 
       type='greeting'
       title='Welcome'
@@ -17,6 +19,8 @@ export default function Home() {
       accounts={[]}
       totalBanks={1}
       totalCurrentBalance={125345.23}/>
-    </main>
+      </header>
+      </div>
+    </section>
   );
 }
